@@ -18,3 +18,10 @@ Scaffold-DbContext [-Connection] [-Provider] [-OutputDir] [-Context] [-Schemas>]
 Scaffold-DbContext "Server=.\SQLExpress;Data Source=SAYANTANGHOSH;Initial Catalog=Sample_WebAPI;Integrated Security=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
   
 ![image](https://github.com/sayantan2017/Sample_EntityFrameworkCore_DataFirstApproach/assets/26603086/fe409545-a4d6-4028-8357-95d66697f1a0)
+  
+You can re-scaffold the model by running the command that you originally ran with the -Force option added. That will result in the contents of the specified folder being over-written. Using the Package Manager Console example from the EF Core docs, the revised command becomes:
+
+Alter table in the in Database Table and need to reflect this changes in Models class
+
+Scaffold-DbContext "Server=.\SQLExpress;Data Source=SAYANTANGHOSH;Initial Catalog=Sample_WebAPI;Integrated Security=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force
+  
